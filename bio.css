@@ -285,6 +285,22 @@
   margin-left: 2.5rem;
   font-size: 26px;
   }
+
+  .navbar .link-text {
+    display: inline;
+    opacity: 0;
+    animation: var(--transition-speed);
+    transition: ease-in;
+    transition-duration: 0.5s;
+  }
+  
+  .navbar:hover .link-text {
+    display: inline;
+    opacity: 1;
+    animation: var(--transition-speed);
+    transition: ease-in;
+    transition-duration: 0.3s;
+  }
   
   .nav-link svg {
   width: 1.5rem;
@@ -390,6 +406,11 @@
   {
     left: 0px;
   }
+}
+  
+  
+  #pilots{
+    font-size: 24px;
   }
 
 

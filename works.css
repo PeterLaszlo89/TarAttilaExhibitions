@@ -157,7 +157,6 @@ z-index: 0;
 .exhibitions1, .exhibitions2, .exhibitions3{
 width: 300px;
 height: 300px;
-border-radius: 50%;
 background-color:#202020;
 -webkit-transition: 0.3s ease-in-out;
 -moz-transition: 0.3s ease-in-out;
@@ -301,10 +300,10 @@ height: 4rem;
 color: white;
 /*color: var(--text-primary);  */                           /* NAVLINK BETŰSZÍN TEXT PRIMARY */
 text-decoration: none;
+font-size: 35px;
 filter: grayscale(100%) opacity(0.5);
 transition: var(--transition-speed);
 }
-
 
 .nav-link:hover {
 text-decoration: none;
@@ -313,11 +312,10 @@ background: var(--bg-secondary);
 color: var(--text-secondary);
 }
 
-
 .link-text {
-  display: none;
-  margin-left: 2.5rem;
-  font-size: 26px;
+display: none;
+margin-left: 2.5rem;
+font-size: 26px;
 }
 
 .nav-link svg {
@@ -445,20 +443,10 @@ transform: rotate(-180deg);
   width: 10rem;
 }
 
-.navbar .link-text {
-  display: inline;
-  opacity: 0;
-  animation: var(--transition-speed);
-  transition: ease-in;
-  transition-duration: 0.5s;
-}
-
 .navbar:hover .link-text {
   display: inline;
-  opacity: 1;
-  animation: var(--transition-speed);
   transition: ease-in;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .navbar:hover .logo svg
