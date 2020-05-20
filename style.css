@@ -36,7 +36,7 @@ background: #6649b8;
 }
 
 #main {
-height: auto;
+height: 100vh;
 width: auto;
 display: flexbox;
 justify-content: space-evenly;
@@ -47,7 +47,7 @@ z-index: 1;
 @media (max-width: 700px) {
 #main {
     width: 100%;
-    min-height: 1200px;
+    height: 100%;
     margin-left: 0rem;
     z-index: 1;
 }
@@ -149,6 +149,31 @@ z-index: 0;
     z-index: 0;
   }
 }
+@media (max-width: 600px) {
+  #exhibitions{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+}
+@media (max-width: 700px) {
+  #exhibitions{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+}
+@media (max-width: 900px) {
+  #exhibitions{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+}
+
 #exhibitions div h2{
 height: 10%;
 position: relative;
@@ -258,20 +283,29 @@ opacity: 0.5;
 }
 @media (max-width: 400px) {
   .exhibitions1 p:hover, .exhibitions2 p:hover, .exhibitions3 p:hover{
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (max-width: 700px) {
   .exhibitions1 p:hover, .exhibitions2 p:hover, .exhibitions3 p:hover{
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (max-width: 800px) {
   .exhibitions1 p:hover, .exhibitions2 p:hover, .exhibitions3 p:hover{
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (max-width: 800px) {
+  .exhibitions1,.exhibitions2,.exhibitions3{
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+  }
+}
+@media (max-width: 900px) {
   .exhibitions1,.exhibitions2,.exhibitions3{
     max-width: 150px;
     max-height: 150px;
@@ -284,18 +318,26 @@ opacity: 0.5;
   .exhibitions2 p,.exhibitions3 p{
     position: relative;
     text-decoration: none;
-    font-size: 0.7em;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding-top: 2rem;
     }
   }
+  @media (max-width: 900px) {
+    .exhibitions2 p,.exhibitions3 p{
+      position: relative;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding-top: 2rem;
+      }
+    }
 
-.exdates{
-  color:#525252;
-}
 .exdates h2{
   opacity: 1;
+  color:#525252;
 }
 .navbar {
 position: fixed;
@@ -369,7 +411,7 @@ color: var(--text-secondary);
 
 .link-text {
   display: none;
-  margin-left: 2.5rem;
+  margin-left: 1rem;
   font-size: 26px;
 }
 @media (max-width: 400px) {
@@ -443,7 +485,7 @@ transform: rotate(-180deg);
   }
   
   .navbar:hover {
-    width: 8rem;
+    width: 2.5rem;
   }
   
   .navbar:hover .link-text {
@@ -453,6 +495,31 @@ transform: rotate(-180deg);
   .navbar:hover .logo svg
   {
     margin-left: 11rem;
+  }
+  
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar {
+    top: 0;
+    width: 2.5rem;
+    height: 100%;
+  }
+  
+  .navbar:hover {
+    width: 8rem;
+  }
+  
+  .navbar:hover .link-text {
+    display: inline;
+  }
+  
+  .navbar:hover .logo svg
+  {
+    margin-left: 10rem;
   }
   
   .navbar:hover .logo-text
@@ -539,8 +606,7 @@ transform: rotate(-180deg);
 }
 }
 #copyright{
-padding-bottom: 30px;
-margin: 0 auto;
+margin-top: auto;
 width: 100%;
 text-align: center;
 color: white;
