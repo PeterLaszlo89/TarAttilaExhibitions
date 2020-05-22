@@ -119,19 +119,16 @@
   }
   @media (max-width: 400px) {
     .biography {
-      width: 10rem;
-      font-size: 20px;
-      color: white;
+      width: 8rem;
       display: flexbox;
       margin-left: 2rem;
       vertical-align: bottom;
-      padding-top: 300px;     
+      padding-top: 300px;    
+      font-size: 14px; 
     }
   }
     @media (max-width: 500px) {
       .biography {
-        font-size: 20px;
-        color: white;
         display: flexbox;
         padding: 1rem;
         margin-left: 2rem;
@@ -139,6 +136,16 @@
         padding-top: 300px;
       }
   }
+  @media (max-width: 900px) {
+    .biography {
+      font-size: 24px;
+      display: flexbox;
+      padding: 1rem;
+      margin-left: 2rem;
+      vertical-align: bottom;
+      padding-top: 300px;
+    }
+}
   @media (max-width: 400px) {
   .logo img {
       max-width: 70%;
