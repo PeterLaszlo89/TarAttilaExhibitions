@@ -11,7 +11,8 @@
 body {
 font-family: 'Oswald', sans-serif;
 color: var(--bg-primary);
-background: -webkit-linear-gradient(#eee, rgb(51, 51, 51));
+/* background: -webkit-linear-gradient(#eee, rgb(51, 51, 51)); */
+background-color: rgb(177, 177, 177);
 margin: 0;
 padding: 0;
 }
