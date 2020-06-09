@@ -1,10 +1,10 @@
 :root {
   font-size: 24px;
   font-family: 'Oswald', sans-serif;
---text-primary:#727272;
---text-secondary: #ececec;
---bg-primary: #202020;
---bg-secondary: #141418;
+--text-primary:#bebebe;
+--text-secondary: #eeeeee;
+--bg-primary: #1c1c1c;
+--bg-secondary: #2e2e2e;
 --transition-speed: 600ms;
 }
 
@@ -12,7 +12,7 @@ body {
 font-family: 'Oswald', sans-serif;
 color: var(--bg-primary);
 /* background: -webkit-linear-gradient(#eee, rgb(51, 51, 51)); */
-background-color: rgb(177, 177, 177);
+background-color:var(--bg-primary);
 margin: 0;
 padding: 0;
 }
@@ -113,7 +113,7 @@ background-clip: initial;
 -webkit-text-fill-color: transparent;*/
 text-align: center;
 /*color: rgb(255, 255, 255);*/
-color:#525252;
+color:var(--text-primary);
 letter-spacing: 0.5ch;
 margin: 0 auto;
 padding: 0.5rem;
@@ -150,7 +150,7 @@ padding: 0.5rem;
 }
 
 /* Gradient color1 - color2 - color1 */
-
+/*
 hr {
   padding-left: 4rem;
   margin:2 auto;
@@ -159,6 +159,7 @@ hr {
   color: rgb(51, 51, 51);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
 }
+*/
 
 @media (max-width: 400px) {
 .logo img {
@@ -256,7 +257,7 @@ z-index: 0;
 width: 300px;
 height: 300px;
 border-radius: 50%;
-background-color:#202020;
+background-color:#616161;
 -webkit-transition: 0.3s ease-in-out;
 -moz-transition: 0.3s ease-in-out;
 -o-transition: 0.3s ease-in-out;
@@ -278,7 +279,7 @@ opacity: 1;
 background-position: center;
 }
 .exhibitions2{
-background-image:url('img/paulie.png');
+background-color: var(--text-primary);
 opacity: 0.5;
 }
 @media (max-width: 400px) {
@@ -314,7 +315,7 @@ padding-top: 5rem;
 }
 
 .exhibitions3{
-background-image:url('img/silvio.png');
+background-color: var(--text-primary);
 opacity: 0.5;
 }
 @media (max-width: 400px) {
@@ -409,7 +410,7 @@ opacity: 0.5;
 
 .exdates h2{
   opacity: 1;
-  color:#525252;
+  color:var(--text-primary);
 }
 .navbar {
 position: fixed;
@@ -474,7 +475,7 @@ transition: var(--transition-speed);
 .nav-link:hover {
 text-decoration: none;
 filter: grayscale(0%) opacity(1);
-background: var(--bg-secondary);
+background: var(--bg-primary);
 color: var(--text-secondary);
 }
 

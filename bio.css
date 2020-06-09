@@ -1,11 +1,11 @@
 :root {
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
-  --text-primary:#727272;
-  --text-secondary: #ececec;
-  --bg-primary: #202020;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
+    --text-primary:#bebebe;
+    --text-secondary: #eeeeee;
+    --bg-primary: #1c1c1c;
+    --bg-secondary: #2e2e2e;
+    --transition-speed: 600ms;
   }
   
   body {
@@ -353,10 +353,10 @@
   }
   
   .nav-link:hover {
-  text-decoration: none;
-  filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+    text-decoration: none;
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
   }
   
   .link-text {
