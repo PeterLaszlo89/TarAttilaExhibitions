@@ -57,7 +57,7 @@
   }
   @media (max-width: 700px) {
     #main h1{
-      font-size: 16px;
+      font-size: 26px;
       padding-left: 2rem;
     }
   }
@@ -72,6 +72,30 @@
     margin:0 auto;
     font-size: 32px;
     z-index: 0;
+  }
+  @media (max-width: 700px) {
+    .contactlogo{
+     
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    height: 200px;
+    padding: 1rem;
+    margin:0 auto;
+    z-index: 0;
+    }
+  }
+  @media (max-width: 700px) {
+    .contactlogo{
+     
+      display: flex;
+      justify-content: space-around;
+      width:auto;
+      height: 200px;
+      padding: 1rem;
+      margin:0 auto;
+      z-index: 0;
+    }
   }
 
   #contactspan{
@@ -103,17 +127,18 @@
   }
 
   @media (max-width: 700px) {
-    .contactlogo svg{
-      width: 50%;
-    height: 50%;
-    padding: 1.5rem;
+    .contactlogo img{
+      max-width: 100px;
+      max-height: 100px;
+      padding: 0.5rem;
+    
     }
   }
   @media (max-width: 700px) {
-    .contactlogo svg{
-      width: 50%;
-    height: 50%;
-    padding: 1.5rem;
+    .contactlogo img{
+      max-width: 100px;
+      max-height: 100px;
+      padding: 0.5rem;
     }
   }
 
@@ -515,7 +540,7 @@
   
   
   #copyright{
-  padding-bottom:50px;
+  padding-bottom:10px;
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -524,17 +549,17 @@
   }
   @media (max-width: 600px) {
     #copyright {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     }
   }
   @media (max-width: 400px) {
     #copyright {
-    padding-bottom: 150px;
+    padding-bottom: 20px;
     }
   }
   @media (max-width: 800px) {
     #copyright {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     }
   }
   #main{                                                       /*WEBSITE FADEIN JS SHIT*/   
