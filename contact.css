@@ -80,10 +80,7 @@
     text-decoration: none;
     flex-direction: column;
     align-items: right;
-    padding: 1.5rem;
-    width: 50vw;
-    height: auto;
-    height: 30%;
+    padding: 2.5rem;
     position: relative;
     text-align: center;
     z-index: 0;
@@ -96,12 +93,12 @@
     }
   }
   
-  .contactlogo svg {
+  .contactlogo img {
     flex-direction: column;
     align-items: center;
     color:#525252;
-    width: 50%;
-    height: 50%;
+    max-width: 250px;
+    max-height: 250px;
     padding: 1.5rem;
   }
 
