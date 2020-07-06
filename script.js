@@ -14,6 +14,7 @@ $(function(){
     window.location = $(this).find("a").attr("href"); 
     return false;
   });
+
   
   /*  window.sr = ScrollReveal();
   sr.reveal('#exhibitions .exhibitions1 div', {
